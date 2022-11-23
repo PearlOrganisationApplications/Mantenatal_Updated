@@ -34,7 +34,7 @@ class CourseOutline extends StatelessWidget {
               width: constrains.maxWidth,
               child: Column(
                 children: <Widget>[
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   Text.rich(
                     TextSpan(
                       text: "COURSE",
@@ -87,6 +87,7 @@ class CourseOutline extends StatelessWidget {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Colors.lightBlue,
+                      border: Border.all(color: AppColor.textcolor, width: 3),
                       borderRadius: BorderRadius.circular(150),
                     ),
                     child: Image.asset(
@@ -97,7 +98,7 @@ class CourseOutline extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     "1. DISCUSS & SHARE",
                     style: TextStyle(
@@ -107,12 +108,13 @@ class CourseOutline extends StatelessWidget {
                     "  Talk about your hopes & share \n your concerns about fatherhood",
                     style: TextStyle(color: AppColor.textcolor),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Container(
                     height: 100,
                     width: 100,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
+                      border: Border.all(color: AppColor.textcolor, width: 3),
                       color: Colors.lightBlue,
                       borderRadius: BorderRadius.circular(150),
                     ),
@@ -124,7 +126,7 @@ class CourseOutline extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     "2. BEFORE BIRTH",
                     style: TextStyle(
@@ -134,13 +136,14 @@ class CourseOutline extends StatelessWidget {
                     "  Practical tips to help you prepare for the \narrival of your baby & how to support mum",
                     style: TextStyle(color: AppColor.textcolor),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Container(
                     height: 100,
                     width: 100,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Colors.lightBlue,
+                      border: Border.all(color: AppColor.textcolor, width: 3),
                       borderRadius: BorderRadius.circular(150),
                     ),
                     child: Image.asset(
@@ -151,7 +154,7 @@ class CourseOutline extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     "3. BIRTH & BEYOND",
                     style: TextStyle(
@@ -161,13 +164,14 @@ class CourseOutline extends StatelessWidget {
                     "  What to expect - Vaginal & C-Section + \n            your role when baby arrives",
                     style: TextStyle(color: AppColor.textcolor),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Container(
                     height: 100,
                     width: 100,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Colors.lightBlue,
+                      border: Border.all(color: AppColor.textcolor, width: 3),
                       borderRadius: BorderRadius.circular(150),
                     ),
                     child: Image.asset(
@@ -178,7 +182,7 @@ class CourseOutline extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
                     "4. HAPPY DAD",
                     style: TextStyle(
@@ -188,7 +192,7 @@ class CourseOutline extends StatelessWidget {
                     "  Bonding with your baby. Focus on MENtal \n         health + ongoing support for dad",
                     style: TextStyle(color: AppColor.textcolor),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   const SizedBox(
                     height: 30,
                     child: Image(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mantenatal/Constant/constant.dart';
 import 'package:mantenatal/Screens/course_outline.dart';
+import 'package:mantenatal/Screens/price_guide.dart';
 import 'package:mantenatal/Widgets/linear_progressbar.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
@@ -78,7 +79,10 @@ class _HomeState extends State<Home> {
               ),
               title: const Text('Pricing'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const PriceGuide()));;
               },
             ),
             ListTile(
