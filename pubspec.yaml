@@ -40,6 +40,7 @@ dependencies:
   percent_indicator: ^4.2.2
   lottie: ^2.0.0
   onboarding: ^3.1.0
+  carousel_slider: ^4.1.1
 
 dev_dependencies:
   flutter_test:

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mantenatal/Constant/constant.dart';
 import 'package:mantenatal/Screens/course_outline.dart';
 import 'package:mantenatal/Screens/price_guide.dart';
+import 'package:mantenatal/Screens/testimonial_module.dart';
 import 'package:mantenatal/Widgets/linear_progressbar.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
@@ -13,7 +14,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -82,7 +82,7 @@ class _HomeState extends State<Home> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const PriceGuide()));;
+                        builder: (context) => const PriceGuide()));
               },
             ),
             ListTile(
@@ -91,7 +91,10 @@ class _HomeState extends State<Home> {
               ),
               title: const Text('Blog'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const TestimonialModule()));
               },
             ),
             ListTile(
