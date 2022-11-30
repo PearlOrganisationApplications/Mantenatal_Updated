@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mantenatal/Constant/constant.dart';
 import 'package:mantenatal/Screens/course_outline.dart';
+import 'package:mantenatal/Screens/faq_screen.dart';
 import 'package:mantenatal/Screens/price_guide.dart';
 import 'package:mantenatal/Screens/testimonial_module.dart';
 import 'package:mantenatal/Widgets/linear_progressbar.dart';
@@ -91,10 +92,21 @@ class _HomeState extends State<Home> {
               ),
               title: const Text('Blog'),
               onTap: () {
+                Navigator.pop(
+                  context,
+                );
+              },
+            ),
+            ListTile(
+              leading: const Icon(
+                Icons.note_alt_rounded,
+              ),
+              title: const Text('Faq'),
+              onTap: () {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const TestimonialModule()));
+                        builder: (context) => const FAQ()));
               },
             ),
             ListTile(
