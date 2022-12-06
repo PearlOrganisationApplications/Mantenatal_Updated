@@ -77,13 +77,14 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                       child: GestureDetector(
                         onTap: (() {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => const Home(),
-                            ),
-                          );
-                        }),
+                          // Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => const Home(),
+                          //   ),
+                          // );
+                        }
+                        ),
                         child: Container(
                           alignment: Alignment.center,
                           height: MediaQuery.of(context).size.height * 0.25,
