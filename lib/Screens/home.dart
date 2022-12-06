@@ -1,10 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mantenatal/Constant/constant.dart';
-import 'package:mantenatal/Screens/course_outline.dart';
-import 'package:mantenatal/Screens/faq_screen.dart';
-import 'package:mantenatal/Screens/price_guide.dart';
-import 'package:mantenatal/Screens/testimonial_module.dart';
-import 'package:mantenatal/Widgets/linear_progressbar.dart';
+import 'package:mantenatal/Constant/App%20Color/constant.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class Home extends StatefulWidget {
@@ -29,7 +24,7 @@ class _HomeState extends State<Home> {
             text: "M",
             style: const TextStyle(color: Colors.white70),
             children: <TextSpan>[
-              TextSpan(text: "A", style: TextStyle(color: AppColor.themecolor)),
+              TextSpan(text: "A", style: TextStyle(color: AppColors.white)),
               const TextSpan(
                   text: "Ntenatal", style: TextStyle(color: Colors.white70))
             ],
@@ -48,7 +43,7 @@ class _HomeState extends State<Home> {
                   children: <TextSpan>[
                     TextSpan(
                         text: "A",
-                        style: TextStyle(color: AppColor.themecolor)),
+                        style: TextStyle(color: AppColors.mediumPurple)),
                     const TextSpan(text: "Ntenatal")
                   ],
                 ),
@@ -68,10 +63,10 @@ class _HomeState extends State<Home> {
               ),
               title: const Text('Course Outline'),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const CourseOutline()));
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (context) => const CourseOutline()));
               },
             ),
             ListTile(
@@ -80,10 +75,10 @@ class _HomeState extends State<Home> {
               ),
               title: const Text('Pricing'),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const PriceGuide()));
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (context) => const PriceGuide()));
               },
             ),
             ListTile(
@@ -103,10 +98,10 @@ class _HomeState extends State<Home> {
               ),
               title: const Text('Faq'),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const FAQ()));
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (context) => const FAQ()));
               },
             ),
             ListTile(
@@ -252,7 +247,7 @@ class _HomeState extends State<Home> {
                             TextSpan(
                               text: " STORY",
                               style: TextStyle(
-                                  color: AppColor.themecolor,
+                                  // color: AppColor.themecolor,
                                   fontWeight: FontWeight.normal),
                             ),
                           ],
@@ -266,7 +261,7 @@ class _HomeState extends State<Home> {
                         Padding(
                           padding: const EdgeInsets.only(left: 15.0),
                           child: Container(
-                            color: AppColor.themecolor,
+                            // color: AppColor.themecolor,
                             height: 80,
                             width: 5,
                           ),
@@ -300,7 +295,7 @@ class _HomeState extends State<Home> {
                         percent: 0.76,
                         center: const Text("76.0%"),
                         linearStrokeCap: LinearStrokeCap.round,
-                        progressColor: AppColor.themecolor,
+                        // progressColor: AppColor.themecolor,
                       ),
                     ),
                     const SizedBox(height: 30),
@@ -320,7 +315,7 @@ class _HomeState extends State<Home> {
                         percent: 0.91,
                         center: const Text("91.0%"),
                         linearStrokeCap: LinearStrokeCap.round,
-                        progressColor: AppColor.themecolor,
+                        // progressColor: AppColor.themecolor,
                       ),
                     ),
                     const SizedBox(height: 30),
@@ -340,7 +335,7 @@ class _HomeState extends State<Home> {
                         percent: 0.84,
                         center: const Text("84.0%"),
                         linearStrokeCap: LinearStrokeCap.round,
-                        progressColor: AppColor.themecolor,
+                        // progressColor: AppColor.themecolor,
                       ),
                     ),
                     const SizedBox(height: 30),
@@ -360,7 +355,7 @@ class _HomeState extends State<Home> {
                         percent: 1.00,
                         center: const Text("100.0%"),
                         linearStrokeCap: LinearStrokeCap.round,
-                        progressColor: AppColor.themecolor,
+                        // progressColor: AppColor.themecolor,
                       ),
                     ),
                     const SizedBox(height: 30),
@@ -380,7 +375,7 @@ class _HomeState extends State<Home> {
                         percent: 1.00,
                         center: const Text("100.0%"),
                         linearStrokeCap: LinearStrokeCap.round,
-                        progressColor: AppColor.themecolor,
+                        // progressColor: AppColor.themecolor,
                       ),
                     ),
 
