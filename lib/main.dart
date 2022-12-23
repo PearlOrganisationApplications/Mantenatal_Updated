@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mantenatal/OnBoarding%20Screen/onboarding_screen.dart';
+import 'package:mantenatal/Screens/calculate_duration.dart';
+import 'package:mantenatal/Screens/cycle_duration.dart';
+import 'package:mantenatal/Screens/duedate_screen.dart';
 import 'package:mantenatal/Screens/profile_page.dart';
 import 'package:mantenatal/Theme/theme_model.dart';
 import 'package:provider/provider.dart';
@@ -42,9 +45,11 @@ class MyApp extends StatelessWidget {
           routes: {
             '/': (context) => const ProfilePage(),
             'first': (context) => const OnboardingScreen(),
-            'childinfo':(context)=> const ChildInfoPage(),
+            'childinfo': (context) => const ChildInfoPage(),
+            'cycleduration': (context) => const CycleDuration(),
+            'calculateduration': (context) => const CalculateDuration(),
+            'duescreen': (context) => const DueDateScreen()
           },
-
         );
       },
     );

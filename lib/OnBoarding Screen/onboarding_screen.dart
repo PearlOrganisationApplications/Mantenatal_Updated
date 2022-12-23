@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:mantenatal/Constant/size_config.dart';
-import 'package:mantenatal/Screens/home.dart';
 import 'package:mantenatal/Screens/profile_page.dart';
 
 import 'onboarding_contents.dart';
@@ -124,7 +123,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => ProfilePage()));
+                                      builder: (context) => const ProfilePage()));
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.black,
@@ -151,16 +150,16 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                                 onPressed: () {
                                   _controller.jumpToPage(2);
                                 },
-                                child: const Text(
-                                  "SKIP",
-                                  style: TextStyle(color: Colors.black),
-                                ),
                                 style: TextButton.styleFrom(
                                   elevation: 0,
                                   textStyle: TextStyle(
                                     fontWeight: FontWeight.w600,
                                     fontSize: (width <= 550) ? 13 : 17,
                                   ),
+                                ),
+                                child: const Text(
+                                  "SKIP",
+                                  style: TextStyle(color: Colors.black),
                                 ),
                               ),
                               ElevatedButton(
