@@ -16,3 +16,6 @@ class AppColors {
   static Color shedowgreyColor = const Color(0xFFbfbfbf);
   static Color skyColor= const Color(0xff69CCED);
 }
+const primaryColor = Color(0XFF768BE5);
+const accentColor = Color(0xfffe3766);
+var litePrimary = primaryColor.withOpacity(0.5);

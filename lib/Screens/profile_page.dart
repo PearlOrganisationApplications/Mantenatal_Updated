@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mantenatal/Screens/child_info.dart';
+import 'package:mantenatal/Screens/stopwatch.dart';
 import 'package:provider/provider.dart';
 
 import '../Constant/App Color/constant.dart';
 import '../Theme/theme_model.dart';
+import '../home_screen.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -122,7 +124,7 @@ class _ProfilePageState extends State<ProfilePage> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => const ChildInfoPage(),
+                            builder: (context) => const HomeScreen(),
                           ),
                         );
                       },

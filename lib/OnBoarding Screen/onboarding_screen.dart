@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:mantenatal/Constant/size_config.dart';
 import 'package:mantenatal/Screens/profile_page.dart';
+import 'package:mantenatal/home_screen.dart';
 
 import 'onboarding_contents.dart';
 
@@ -123,7 +124,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const ProfilePage()));
+                                      builder: (context) => const HomeScreen()));
                             },
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Colors.black,

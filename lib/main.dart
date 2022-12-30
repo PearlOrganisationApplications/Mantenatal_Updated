@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mantenatal/OnBoarding%20Screen/onboarding_screen.dart';
-import 'package:mantenatal/Screens/calculate_duration.dart';
-import 'package:mantenatal/Screens/cycle_duration.dart';
-import 'package:mantenatal/Screens/duedate_screen.dart';
-import 'package:mantenatal/Screens/profile_page.dart';
 import 'package:mantenatal/Theme/theme_model.dart';
+import 'package:mantenatal/home_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-import 'Screens/child_info.dart';
 import 'Theme/app_theme.dart';
 
 int? initScreen;
@@ -43,12 +38,12 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: initScreen == 0 || initScreen == null ? "first" : "/",
           routes: {
-            '/': (context) => const ProfilePage(),
+            '/': (context) => const HomeScreen(),
             'first': (context) => const OnboardingScreen(),
-            'childinfo': (context) => const ChildInfoPage(),
-            'cycleduration': (context) => const CycleDuration(),
-            'calculateduration': (context) => const CalculateDuration(),
-            'duescreen': (context) => const DueDateScreen()
+            // 'childinfo': (context) => const HomeScreen(),
+            // 'cycleduration': (context) => const CycleDuration(),
+            // 'calculateduration': (context) => const CalculateDuration(),
+            // 'duescreen': (context) => const DueDateScreen()
           },
         );
       },
