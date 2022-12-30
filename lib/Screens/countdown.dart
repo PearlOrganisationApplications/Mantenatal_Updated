@@ -198,7 +198,7 @@ class _CountDownState extends State<CountDown> {
             )
           ] else ...[
             const Text(
-              'Pick duration  (measured in seconds)',
+              'Pick Duration  (Measured in Seconds)',
               style: TextStyle(
                 fontWeight: FontWeight.w500,
               ),
