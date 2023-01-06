@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:mantenatal/Constant/size_config.dart';
+import 'package:mantenatal/Screens/home-stopwatch.dart';
 import 'package:mantenatal/Screens/profile_page.dart';
 import 'package:mantenatal/home_screen.dart';
 

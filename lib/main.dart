@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mantenatal/OnBoarding%20Screen/onboarding_screen.dart';
+import 'package:mantenatal/Screens/home-stopwatch.dart';
+import 'package:mantenatal/Screens/profile_page.dart';
 import 'package:mantenatal/Theme/theme_model.dart';
 import 'package:mantenatal/home_screen.dart';
 import 'package:provider/provider.dart';
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: initScreen == 0 || initScreen == null ? "first" : "/",
           routes: {
-            '/': (context) => const HomeScreen(),
+            '/': (context) => const ProfilePage(),
             'first': (context) => const OnboardingScreen(),
             // 'childinfo': (context) => const HomeScreen(),
             // 'cycleduration': (context) => const CycleDuration(),
